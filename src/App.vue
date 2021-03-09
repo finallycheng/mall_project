@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <tabbar-shell></tabbar-shell>
-    <tabbar-btn></tabbar-btn>
+    <router-view></router-view>
+    <tabbar-main></tabbar-main>
   </div>
 </template>
 
 <style></style>
 
 <script>
-import TabbarBtn from "./components/common/tabbar/tabbarBtn.vue";
-import tabbarShell from "./components/common/tabbar/tabbarShell.vue";
+import TabbarMain from "@/components/content/tabbarMain.vue";
 
 export default {
-  components: { tabbarShell, TabbarBtn }
+  components: { TabbarMain }
 };
 </script>
