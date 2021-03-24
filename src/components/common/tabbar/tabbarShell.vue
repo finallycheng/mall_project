@@ -62,8 +62,10 @@ export default {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 50px;
+  height: 60px;
+  background-color: #fff;
   width: 100%;
+  padding-top: 10px;
 }
 
 .tabbar-btn img {

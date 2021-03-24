@@ -14,3 +14,7 @@ export default {
   components: { TabbarMain }
 };
 </script>
+
+<style>
+@import url("./assets/css/init.css");
+</style>
