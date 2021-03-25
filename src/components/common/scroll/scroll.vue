@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper" ref="wrappper">
+  <div class="wrapper" ref="wrapper">
     <div class="content">
       <slot></slot>
     </div>
@@ -21,8 +21,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.wrapper {
-  overflow: hidden;
-}
-</style>
+<style scoped></style>

@@ -108,5 +108,6 @@ export default {
   /* height: calc(100% - 110px); */
   top: 44px;
   bottom: 70px;
+  overflow: hidden;
 }
 </style>
