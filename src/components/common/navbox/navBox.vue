@@ -19,7 +19,6 @@ export default {
   line-height: 44px;
   display: flex;
   text-align: center;
-  background-color: rgb(252, 112, 112);
   position: fixed;
   z-index: 9;
   top: 0;
@@ -33,9 +32,7 @@ export default {
 }
 
 .nav-center {
-  font-size: 24px;
   flex: 1;
-  color: #fff;
-  font-weight: bold;
+  text-align: center;
 }
 </style>

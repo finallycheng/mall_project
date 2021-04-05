@@ -1,7 +1,7 @@
 <template>
   <div class="goods_list">
     <goods-list-itme
-      v-for="(data, index) in child_datas"
+      v-for="(data, index) in good_datas"
       :key="index"
       :data="data"
     />
@@ -13,7 +13,7 @@ import goodsListItme from "./goodsListItme.vue";
 export default {
   components: { goodsListItme },
   props: {
-    child_datas: {
+    good_datas: {
       type: Array,
       default() {
         return [];

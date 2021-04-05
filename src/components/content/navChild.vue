@@ -29,23 +29,13 @@ export default {
   methods: {
     activate(index) {
       this.isShow = index;
-      this.$emit("navClick", index);
+      this.$emit("nav_click", index);
     }
   }
 };
 </script>
 
 <style scoped>
-.nav_child {
-  position: sticky;
-  z-index: 9;
-  height: 30px;
-  top: 44px;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-}
-
 ul {
   display: flex;
   text-align: center;
@@ -53,8 +43,8 @@ ul {
 
 ul li {
   flex: 1;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .press {
