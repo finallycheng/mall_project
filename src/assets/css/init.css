@@ -1,0 +1,31 @@
+body, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    font-size: normal;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+:root {
+    --nav-color: rgb(252, 112, 112);
+}
