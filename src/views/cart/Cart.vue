@@ -1,4 +1,5 @@
 <template>
+
   <div class="cart">
     <nav-bar class="nav">
       <template v-slot:nav-center>
@@ -9,10 +10,12 @@
       <article-box />
     </scroll>
     <aggregate />
+
   </div>
 </template>
 
 <script>
+
 import navBar from "@/components/common/navbox/navBox.vue";
 import scroll from "@/components/common/scroll/scroll.vue";
 
@@ -63,3 +66,4 @@ export default {
   background-color: rgb(243, 243, 243);
 }
 </style>
+

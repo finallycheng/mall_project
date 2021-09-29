@@ -1,5 +1,7 @@
 <template>
+
   <tabbar-shell></tabbar-shell>
+
 </template>
 
 <script>

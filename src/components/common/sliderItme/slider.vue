@@ -11,6 +11,7 @@ export default {
   data() {
     return {
       img_index: 0,
+
       img_number: 0,
       img_width: 0
     };
@@ -20,6 +21,7 @@ export default {
     //   return screen.width;
     //   // return window.innerWidth;
     // },
+
     img_left() {
       return -(this.img_width + this.img_width * this.img_index);
     },
@@ -33,6 +35,8 @@ export default {
       this.img_number = this.dom_img_box.children.length - 1;
     },
     push_img() {
+
+
       let one_img = this.dom_img_box.firstElementChild;
       let copy_dom = one_img.cloneNode(true);
       this.dom_img_box.appendChild(copy_dom);
@@ -45,13 +49,16 @@ export default {
       }, 1500);
     },
     toggle() {
+
       if (this.img_index >= this.img_number) {
+
         this.img_index = 0;
         this.dom_img_box.style.transition = "none";
         this.dom_img_box.style.transform = "translate(0px)";
       }
     }
   },
+
   created() {},
   mounted() {
     this.img_width = window.innerWidth;
@@ -62,6 +69,7 @@ export default {
   updated() {
     this.push_img();
     // 计算图片的数量
+
     this.count_img();
 
     // 开始轮播图片
@@ -77,6 +85,8 @@ export default {
 
 .carousel_box {
   width: 100%;
+
+
   overflow: hidden;
 }
 
@@ -85,12 +95,16 @@ export default {
 }
 
 .carousel_box li {
+
+
   float: left;
 }
 
 img {
   width: calc(100vw);
+
   height: 150px;
+
   vertical-align: middle;
 }
 </style>

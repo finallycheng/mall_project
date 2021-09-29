@@ -2,7 +2,9 @@
   <div class="list_itme" @click="skip_page()">
     <img :src="data.img" alt="" @load="loadFinish" />
     <p class="text">{{ data.title }}</p>
+
     <span class="like">￥{{ data.money }}</span>
+
     <span class="collect">{{ data.collect }}</span>
   </div>
 </template>
@@ -47,8 +49,10 @@ export default {
   width: 180px;
 }
 
+
 .like {
   margin-right: 10px;
+
 }
 
 .collect::before {

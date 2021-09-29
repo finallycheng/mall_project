@@ -1,5 +1,7 @@
 <template>
+
   <div class="tabbar_shell" v-if="isShow">
+
     <tabbar-btn path="/home">
       <img slot="tabbar-icon" src="@/assets/image/home/home.svg" alt="" />
       <img
@@ -52,6 +54,7 @@
 import tabbarBtn from "./tabbarBtn.vue";
 export default {
   components: { tabbarBtn },
+
   name: "tabbarShell",
   data() {
     return {
@@ -65,6 +68,7 @@ export default {
       }
     }
   }
+
 };
 </script>
 

@@ -1,9 +1,13 @@
 <template>
+
+
   <slider>
     <li v-for="(img_link, index) in imgs_list" :key="index">
       <img :src="img_link" alt="" @load="load_img" />
     </li>
   </slider>
+
+
 </template>
 
 <script>

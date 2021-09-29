@@ -34,7 +34,9 @@ export default {
   methods: {
     controlBtn() {
       this.scroll.on("scroll", position => {
+
         this.$emit("monitor_position", -position.y);
+
       });
     },
     clickTop() {
