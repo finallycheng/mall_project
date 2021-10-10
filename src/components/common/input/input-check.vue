@@ -1,9 +1,16 @@
 <template>
-  <input type="checkbox" class="checked" />
+  <input type="checkbox" class="checked" v-model="checked" />
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    checked: {
+      type: Boolean,
+      default: true
+    }
+  }
+};
 </script>
 
 <style scoped>

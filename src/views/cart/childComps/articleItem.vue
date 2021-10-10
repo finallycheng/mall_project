@@ -1,7 +1,7 @@
 <template>
   <div class="article-item">
     <div class="left-checkbox-box">
-      <input-check :checked="good.checked" @click.native="checkedClick()" />
+      <input-check :checked="isChecked" @click.native="checkedClick()" />
     </div>
     <div class="center-img">
       <img :src="good.img" />
@@ -26,6 +26,11 @@ export default {
     good: {
       Object: Object,
       default: {}
+    }
+  },
+  computed: {
+    isChecked(){
+      return this.good.checked;
     }
   },
   methods: {

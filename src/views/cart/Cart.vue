@@ -1,5 +1,4 @@
 <template>
-
   <div class="cart">
     <nav-bar class="nav">
       <template v-slot:nav-center>
@@ -10,7 +9,6 @@
       <article-box />
     </scroll>
     <aggregate />
-
   </div>
 </template>
 

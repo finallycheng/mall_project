@@ -1,14 +1,14 @@
 <template>
   <div class="aggregate">
     <div class="whole">
-      <input-check :checked="allSelect" @click.native="selectAll" />
+      <input-check :checked="allSelect" @click.native="selectAll()" />
       全选
     </div>
     <div class="total_prices">
       合计：
       <span>{{ totalPrice }}</span>
     </div>
-    <div class="settlement_btn" >去结算</div>
+    <div class="settlement_btn">去结算</div>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(["getGoodsList"]),
+    ...mapGetters(["getGoodsList", "getGoodsCount"]),
     totalPrice() {
       return this.getGoodsList
         .filter(item => {
@@ -40,14 +40,14 @@ export default {
         .toFixed(2);
     },
     allSelect() {
-      if (this.getGoodsList.length === 0) return false;
+      if (this.getGoodsCount === 0) return false;
       return this.getGoodsList.every(item => item.checked);
     }
   },
   methods: {
     selectAll() {
       let select = !this.allSelect;
-      this.getGoodsList.forEach(item => {
+      this.$store.state.shop_car.forEach(item => {
         item.checked = select;
       });
     }

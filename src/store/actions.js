@@ -24,7 +24,6 @@ export default {
 
       if (oldProduct) {
         context.commit("add_good_sum", oldProduct);
-        context.commit("updata_state", init_data);
         resolve("添加成功");
       } else {
         payload.count = 1;
@@ -33,6 +32,7 @@ export default {
         context.commit("add_good", payload);
         resolve("添加成功");
       }
+      context.commit("updata_state", init_data);
     });
   }
 };
